@@ -1,0 +1,135 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  margin:0 auto;
+  background-color:#e8e8e7;
+}
+.container {
+  width:1000px;
+  margin:0 auto;
+
+}
+.category-bar {
+  margin:0 auto;
+  width: 1000px;
+}
+.category-bar ul li {
+  display:table-cell;
+  float:left;
+  margin-left:-20px;
+}
+
+.category-box {
+  display:none;
+  float:left;
+  margin-left:20px;
+  margin-right:11px;
+  background-color:#5e9ba5;
+  color:#feffff;
+}
+#div_1 {
+  width:134px; height:50px;
+  background-image:url('/images/menu1.png');
+}
+#div_2 {
+  width:164px; height:50px;
+  background-image:url('/images/menu2.png');
+}
+#div_3 {
+  width:164px; height:50px;
+  background-image:url('/images/menu3.png');
+}
+#div_4 {
+  width:164px; height:50px;
+  background-image:url('/images/menu4.png');
+}
+#div_5 {
+  width:164px; height:50px;
+  background-image:url('/images/menu5.png');
+}
+#div_6 {
+  width:164px; height:50px;
+  background-image:url('/images/menu6.png');
+}
+#div_7 {
+  width:134px; height:50px;
+  background-image:url('/images/menu7.png');
+}
+.top-bar {
+  background-color:#5e9ba5;
+  height:45px;
+}
+
+.top-icon img {
+  margin-top:10px;
+
+}
+
+.top-icon {
+  height:100%;
+  float:right;
+  margin-right:20px;
+}
+.menu_table {
+  margin-bottom:-1px;
+
+}
+
+.icon_space {
+padding-left:25px; padding-top: 35px;
+
+}
+.three_icon {
+  margin-top:20px;
+float:right; margin-right:20px;
+}
+.three_icon img {
+margin-left:20px;
+
+}
+.second_row .item_box{
+  margin-top:30px;
+
+}
+
+.item_box {
+  width:220px;
+  height:208px;
+  border-radius:3px;
+  background-color:white;
+  float:left;
+  margin-right:29px;
+  box-shadow: 3px 3px 1px #d3d2cf;
+
+}
+.item_box:last-child {
+  margin-right:0px;
+}
+.item_image {
+  margin:0 auto;
+  margin-top:10px;
+  width: 200px;
+  height:130px;
+  background-color:#d6d6d6;
+}
+
+.item_box p{
+  color:#807f7f;
+  float:left;
+}
+.item_box p:last-child {
+  margin-top:-10px;
+  color:#e97862;
+}
+
+
+.main_container {
+  border-top:1px solid #afafaf;
+  width:968px;
+  margin-left:20px;
+  margin-top:15px;
+  padding-top:15px;
+  float:left;
+}
