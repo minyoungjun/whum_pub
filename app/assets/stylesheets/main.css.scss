@@ -66,11 +66,16 @@ body {
   margin-top:10px;
 
 }
+.top-icon p {
+  font-size:13px;
+  color:white;
 
+}
 .top-icon {
-  height:100%;
+  width:120px;
+  height:45px;
   float:right;
-  margin-right:20px;
+  text-align:center;
 }
 .menu_table {
   margin-bottom:-1px;
@@ -104,6 +109,7 @@ margin-left:20px;
   box-shadow: 3px 3px 1px #d3d2cf;
 
 }
+
 .item_box:last-child {
   margin-right:0px;
 }
@@ -133,3 +139,85 @@ margin-left:20px;
   padding-top:15px;
   float:left;
 }
+
+.tomato {
+  color: #e97862;
+
+}
+
+
+.center {
+  margin:0 auto;
+  width:1000px;
+
+}
+
+.user-dropdown {
+
+margin-right:0; width:100px; position:absolute; padding-left:10px; padding-right:10px; height:170px; margin-top:3px; 
+background-color:white;
+display:none;
+}
+
+
+.basket {
+  position:fixed;
+  top:198px;
+  right:0px;
+  width:62px;
+  height:52px;
+  background-image:url('/images/basket_icon.png');
+
+}
+
+.picture_container {
+  width:545px;height:500px; display:table-cell; padding-left:30px;
+
+}
+.grey_box {
+  background-color:#757676; width:530px;height:400px; border-radius:10px; padding-top:15px;
+  padding-left:15px;
+}
+
+.big_picture {
+  background-color:white; width:385px; height:385px;  margin-left:15px;
+display:table-cell;
+}
+.small_picture {
+  width:115px; height:115px; background-color:white;
+
+}
+.small_picture_row {
+display:table-cell;
+width:130px;
+padding-left:15px;
+
+}
+
+
+
+
+
+
+.write_container {
+ width:398px; height:500px; display:table-cell;
+  padding-left:20px;
+}
+
+.write_container table tr td p {
+  color:#4083a9;
+}
+
+.write_container table tr td input{
+  height:30px;
+  width:150px;
+  border:1px solid #d8d6d6;
+
+}
+
+.write_container textarea {
+  border:1px solid #d8d6d6;
+  width:100%;
+
+}
+

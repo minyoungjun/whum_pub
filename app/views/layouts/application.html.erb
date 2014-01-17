@@ -7,14 +7,38 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="top-bar">
-    <div class="top-icon">
-      <img src="/images/friends_icon.png"/>
-    </div>
-    <div class="top-icon">
-      <img src="/images/history_icon.png"/>
-    </div>
+  <div class="basket">
 
+
+  </div>
+
+
+  <div class="top-bar">
+    <div class="center">
+      <div class="top-icon" id="user">
+        <p>박수상님</p>
+        <div class="user-dropdown">
+          <div style="border-bottom:1px solid #afafaf;">
+            <p style="color:#666666;">나의 정보</p>
+          </div>
+          <div style="border-bottom:1px solid #afafaf;">
+            <p style="color:#666666;">신용도</p>
+          </div>
+          <div style="border-bottom:1px solid #afafaf;">
+            <p style="color:#666666;">장바구니</p>
+          </div>
+          <div>
+            <p style="color:#666666;">거래 기록</p>
+          </div>
+        </div>
+      </div>
+      <div class="top-icon">
+        <img src="/images/friends_icon.png"/>
+      </div>
+      <div class="top-icon">
+        <img src="/images/history_icon.png"/>
+      </div>
+    </div>
   </div>
   <div class= "container">
     <div class="icon_space">
@@ -51,6 +75,28 @@
         <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
       </div>
   <script>
+
+    $('#user').hover(function(){
+        $('#user').attr('style', 'background-color:#e97862');
+        $('.user-dropdown').show();
+      },function(){
+        $('#user').attr('style', 'background-color:#5e9ba5');
+        $('.user-dropdown').hide();
+      }
+    );
+    $('.user-dropdown').hover(function(){
+        $('#user').attr('style', 'background-color:#e97862');
+        $('.user-dropdown').show();
+      },function(){
+        $('.user-dropdown').hide();
+        $('#user').attr('style', 'background-color:#5e9ba5');
+      }
+    );
+
+
+
+
+
 
     $('.menu').hover(function(){
         var datamenu = String(this.getAttribute('data-menu'));
