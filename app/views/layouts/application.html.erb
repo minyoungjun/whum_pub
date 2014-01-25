@@ -5,12 +5,18 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+
+  <style>
+    a {text-decoration:none;}
+  </style>
 </head>
 <body>
-  <div class="basket">
 
+  <a href="/main/item">
+    <div class="basket">
 
-  </div>
+    </div>
+  </a>
 
   <div class="top-bar">
     <div class="center">
@@ -24,10 +30,10 @@
             <p style="color:#666666;">신용도</p>
           </div>
           <div style="border-bottom:1px solid #afafaf;">
-            <p style="color:#666666;">장바구니</p>
+            <a href="/main/item"><p style="color:#666666;">장바구니</p></a>
           </div>
           <div>
-            <p style="color:#666666;">거래 기록</p>
+            <a href="/main/item"><p style="color:#666666;">거래 기록</p></a>
           </div>
         </div>
       </div>
@@ -35,7 +41,7 @@
         <img src="/images/friends_icon.png"/>
       </div>
       <div class="top-icon">
-        <img src="/images/history_icon.png"/>
+        <a href="/main/item"><img src="/images/history_icon.png"/></a>
       </div>
     </div>
   </div>
@@ -43,9 +49,15 @@
     <div class="icon_space">
       <a href="/main/index"><img src="/images/main_logo.png"/></a>
       <div class="three_icon">
-        <img src="/images/search_icon.png"/>
-        <img src="/images/write_icon.png"/>
-        <img src="/images/item_icon.png"/>
+        <a href="/main/search">
+          <img src="/images/search_icon.png"/>
+        </a>
+        <a href="/main/write">
+          <img src="/images/write_icon.png"/>
+        </a>
+        <a href="/main/item">
+          <img src="/images/item_icon.png"/>
+        </a>
       </div>
 
     </div>
