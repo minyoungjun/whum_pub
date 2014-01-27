@@ -6,13 +6,10 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 
-  <style>
-    a {text-decoration:none;}
-  </style>
 </head>
 <body>
 
-  <a href="/main/item">
+  <a href="/main/basket">
     <div class="basket">
 
     </div>
@@ -23,17 +20,17 @@
       <div class="top-icon" id="user">
         <p>박수상님</p>
         <div class="user-dropdown">
-          <div style="border-bottom:1px solid #afafaf;">
-            <p style="color:#666666;">나의 정보</p>
+          <div class="dropdown_btn">
+            나의 정보
           </div>
-          <div style="border-bottom:1px solid #afafaf;">
-            <p style="color:#666666;">신용도</p>
+          <div class="dropdown_btn">
+            신용도
           </div>
-          <div style="border-bottom:1px solid #afafaf;">
-            <a href="/main/item"><p style="color:#666666;">장바구니</p></a>
+          <div class="dropdown_btn">
+            <a href="/main/item">장바구니</a>
           </div>
-          <div>
-            <a href="/main/item"><p style="color:#666666;">거래 기록</p></a>
+          <div class="dropdown_btn">
+            <a href="/main/item">거래 기록</a>
           </div>
         </div>
       </div>
