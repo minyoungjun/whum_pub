@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WhumPub2</title>
+  <title>훔쉐어에 오신 것을 환영합니다.</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -20,18 +20,24 @@
       <div class="top-icon" id="user">
         <p>박수상님</p>
         <div class="user-dropdown">
-          <div class="dropdown_btn">
-            나의 정보
-          </div>
+          <a href="/main/profile">
+            <div class="dropdown_btn">
+              나의 정보
+            </div>
+          </a>
           <div class="dropdown_btn">
             신용도
           </div>
-          <div class="dropdown_btn">
-            <a href="/main/item">장바구니</a>
-          </div>
-          <div class="dropdown_btn">
-            <a href="/main/item">거래 기록</a>
-          </div>
+          <a href="/main/item">
+            <div class="dropdown_btn">
+              장바구니
+            </div>
+          </a>
+          <a href="/main/item">
+            <div class="dropdown_btn">
+              거래 기록
+            </div>
+          </a>
         </div>
       </div>
       <div class="top-icon">
